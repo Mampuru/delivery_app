@@ -14,4 +14,4 @@ const kInfoColor = Color(0xFF0099CC);
 const kWarningColor = Color(0xFFFFB114);
 
 //Image
-const logoPath = "assets/app_icon.png";
+const logoPath = "assets/app_logo.png";
