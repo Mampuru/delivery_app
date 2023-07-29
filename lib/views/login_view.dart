@@ -1,4 +1,5 @@
 import 'package:deliver_app/views/signup_view.dart';
+import 'package:deliver_app/views/store_view.dart';
 import 'package:flutter/material.dart';
 
 import '../constants.dart';
@@ -20,7 +21,7 @@ class LoginView extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            const SizedBox(height: 100.0,),
+            const SizedBox(height: 50.0,),
             Image.asset(logoPath,width: 300,),
             const SizedBox(height: 40.0,),
             const Text("Sign In",style: TextStyle(fontSize: 25.0,fontWeight: FontWeight.bold),),
@@ -46,7 +47,7 @@ class LoginView extends StatelessWidget {
                     )),
                 const SizedBox(height: 30.0,),
                 PrimaryLoadingButton(buttonName: "Sign In",isProcessing: isLoading,onTap: () async {
-
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const StoreView()));
                 },),
                 const SizedBox(height: 50.0,),
                 Row(
